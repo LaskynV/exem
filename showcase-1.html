@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Volant</title>
+</head>
+<body>
+    <header class="header_port">
+        <div class="container">
+            <div class="header_content">
+                <div class="header_logo">
+                   <span>VOLANT</span>
+                </div>
+                <div class="header_button">
+                    <input class="regBut button-nav" type="button" onclick="clac()" value="Регистрация"></input>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="authorization">
+        <div class="container">
+            <div class="aut_content">
+                <form class="aut_form" name="myForm"  onsubmit="return validateForm()" method="post">
+                    <p><span class="aut_span">E-mail:</span> <input type="email" class="i-1" name="femail" placeholder="Введите свой e-mail"> </p>
+                    <p><span class="aut_span">Пароль:</span>  <input type="password"  class="i-2" name="fpass" placeholder="Введите свой пароль"></p>
+                    <p><button id="button-click" class="button-nav" onclick="myClick">Войти</button></p>
+         
+                </form>
+               <p> 
+                    
+                </p>
+           
+            </div>
+        </div>
+    </section>
+    <section class="register">
+        <div class="container">
+            <div class="aut_content">
+                <form class="aut_form" name="myForm"  onsubmit="return validateForm()" method="post">
+                    <p><span class="aut_span">E-mail:</span> <input type="email" class="r-1"  placeholder="Введите свой e-mail"> </p>
+                    <p><span class="aut_span">Пароль:</span>  <input type="password"  class="r-2"  placeholder="Введите свой пароль"></p>
+                    <p><span class="aut_span">Пароль:</span>  <input type="password"  class="r-2"  placeholder="Подтвердите свой пароль"></p>
+                    <p><button id="button-reg" class="button-nav" onclick="regClick">Зарегистрироваться</button></p>
+         
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="port-1">
+        <div class="container">
+            <div class="tabs">
+                <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+                <label id="label_port-main"   class="tab tab-1" for="tab-btn-1">Главная</label>
+                <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+                <label id="label_port-1"  class="tab tab-2" for="tab-btn-2">Клиенты</label>
+                <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+                <label id="label_port-1"  class="tab tab-3" for="tab-btn-3">Карта</label>
+    
+            
+                <div id="content-1">
+                    <div class="port-1_text">
+                        <h2 class="h-2_text">Сайт студии VOLANT</h2>
+                        <span class="small_text">Вход выполнен с </span>
+                    </div>
+                    
+                </div>
+                <div id="content-2">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Имя</th>
+                            <th scope="col">Компания</th>
+                            <th scope="col">Почта</th>
+                            <th scope="col">Телефон</th>
+                            <th scope="col">Баланс</th>
+                            <th scope="col">Дата Регистрация</th>
+                        </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div id="content-3">
+                   <div id="map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6783fb643e5d1071013e754d2f1b3fd88075d00acb930a5d3924e6a8dd6e7801&amp;source=constructor" width="100%" height="600" frameborder="0"></iframe>
+                   </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+    <footer class="foot">
+        <div class="container">
+           
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+   
+</body>
+</html>
+
